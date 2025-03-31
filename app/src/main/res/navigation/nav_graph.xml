@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/categoryFragment">
+
+    <fragment
+        android:id="@+id/categoryFragment"
+        android:label="Categories"
+        android:name="com.fake.quizgame.CategoryFragment">
+
+        <action
+            android:id="@+id/action_category_to_quiz"
+            app:destination="@id/quizFragment" />
+
+        <action
+            android:id="@+id/action_category_to_history"
+            app:destination="@id/historyFragment" />
+
+        <action
+            android:id="@+id/action_category_to_leaderboard"
+            app:destination="@id/leaderboardFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/quizFragment"
+        android:label="Quiz"
+        android:name="com.fake.quizgame.QuizFragment">
+        <argument
+            android:name="category"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/historyFragment"
+        android:label="History"
+        android:name="com.fake.quizgame.HistoryFragment" />
+
+    <fragment
+        android:id="@+id/leaderboardFragment"
+        android:label="Leaderboard"
+        android:name="com.fake.quizgame.LeaderboardFragment" />
+    <fragment
+        android:id="@+id/QuizFragment"
+        android:name="com.fake.quizgame.QuizFragment"
+        android:label="Quiz">
+
+        <argument
+            android:name="category"
+            app:argType="string" />
+
+        <action
+            android:id="@+id/action_quiz_to_category"
+            app:destination="@id/categoryFragment" />
+    </fragment>
+
+</navigation>

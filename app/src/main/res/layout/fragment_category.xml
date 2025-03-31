@@ -1,0 +1,17 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button android:id="@+id/category1" android:text="General Knowledge" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <Button android:id="@+id/category2" android:text="Science" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <Button android:id="@+id/category3" android:text="History" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <Button android:id="@+id/category4" android:text="Sports" android:layout_width="match_parent" android:layout_height="wrap_content" />
+
+    <View android:layout_height="24dp" android:layout_width="match_parent" />
+
+    <Button android:id="@+id/historyButton" android:text="View History" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <Button android:id="@+id/leaderboardButton" android:text="View Leaderboard" android:layout_width="match_parent" android:layout_height="wrap_content" />
+</LinearLayout>
