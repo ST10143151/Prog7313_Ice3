@@ -54,4 +54,27 @@
             app:destination="@id/categoryFragment" />
     </fragment>
 
+    <fragment
+        android:id="@+id/quizResultFragment"
+        android:name="com.fake.quizgame.QuizResultFragment"
+        android:label="Quiz Result">
+        <argument
+            android:name="score"
+            app:argType="integer" />
+        <argument
+            android:name="total"
+            app:argType="integer" />
+    </fragment>
+
+
+    <action
+        android:id="@+id/action_quizFragment_to_quizResultFragment"
+        app:destination="@id/quizResultFragment" />
+
+    <action
+        android:id="@+id/action_quizResultFragment_to_categoryFragment"
+        app:destination="@id/categoryFragment" />
+
+
+
 </navigation>

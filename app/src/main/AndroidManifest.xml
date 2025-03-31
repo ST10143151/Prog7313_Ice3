@@ -37,7 +37,7 @@
         <activity
             android:name=".MainActivity"
             android:exported="false" />
-        <activity android:name=".CategoryActivity" android:exported="false"/>
+
 
     </application>
 

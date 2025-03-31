@@ -33,4 +33,7 @@
     <string name="register">Register</string>
     <string name="full_name">Full Name</string>
     <string name="confirm_password">Confirm Password</string>
+
+    <string name="quiz_score_message">You scored %1$d out of %2$d</string>
+
 </resources>
